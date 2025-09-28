@@ -14,9 +14,19 @@ class ImageComponent extends HTMLElement {
 
   attributeChangedCallback(name, _, newValue) {
     this[name] = newValue;
+    // ADDDED...
+    if (name === 'tag') {
+      this.id = newValue; // Set the id on the custom element
+    }
+    // ...ADDED
   }
 
   render() {
+    // ADDED...
+    if (this.tag) {
+      this.id = this.tag; // Set the id on the custom element
+    }
+    // ...ADDED
     const div = document.createElement("div");
     div.innerHTML = `
     <img id="${this.tag}" src="${this.source}" alt="${this.subtitle}">
@@ -36,7 +46,7 @@ class ImageComponent extends HTMLElement {
         font-style: italic;
       }
     </style>
-  `;
+  `; 
 
     this.shadowRoot.appendChild(div);
   }
