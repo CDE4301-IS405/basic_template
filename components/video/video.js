@@ -14,9 +14,20 @@ class Video extends HTMLElement {
 
   attributeChangedCallback(name, _, newValue) {
     this[name] = newValue;
+    // ADDDED...
+    if (name === 'tag') {
+      this.id = newValue; // Set the id on the custom element
+    }
+    // ...ADDED
   }
 
   render() {
+    // ADDED...
+    if (this.tag) {
+      this.id = this.tag; // Set the id on the custom element
+    }
+    // ...ADDED
+    
     const div = document.createElement("div");
     div.innerHTML = `
     <iframe id="${this.tag}" width="100%" src="${this.source}"
