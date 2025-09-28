@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Project Title</title>
+  <title>Smart Test</title>
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/themes/light.css" />
@@ -35,7 +35,7 @@
 
 <body>
   <div class="content">
-    <h1>Project Title</h1>
+    <h1>Smart Test</h1>
 
     <!-- This is the team member component use to display details about your team members -->
     <div class="team-member-wrapper">
@@ -59,7 +59,7 @@
       <h2>Table of Contents</h2>
       <sl-tree>
         <sl-tree-item expanded>
-          <a href="#section-header-1">1. Section Header 1</a>
+          <a href="#section-header-1">1. Section Header 1</a> <!-- href tag must match div id tag to allow link-->
           <sl-tree-item>
             <a href="#sub-section-1-header-1">1.1. Sub-section Header 1</a>
           </sl-tree-item>
@@ -69,7 +69,7 @@
         </sl-tree-item>
 
         <sl-tree-item expanded>
-          <a href="#section-header-2">2. Section Header 1</a>
+          <a href="#section-header-2">2. Section Header 2</a>
           <sl-tree-item>
             <a href="#sub-section-2-header-1">2.1. Sub-section Header 1</a>
           </sl-tree-item>
@@ -89,7 +89,7 @@
 
       <!-- This is an example of what a section might look like -->
       <div id="section-header-1">
-        <h2> 1. Section Header 1 </h2>
+        <h2> 1. Section Header 1</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna
@@ -147,7 +147,7 @@
 
     <br />
     <br />
-    <sl-divider></sl-divider>
+    <sl-divider></sl-divider> <!-- The horizontal line -->
     <div>
       <div id="section-header-2">
         <h2>2. Section Header 2</h2>
@@ -170,12 +170,12 @@
           etiam non quam lacus (Moll et al., 2011; Parker & Fox, 2010). Blandit cursus risus at ultrices mi. Arcu dui
           vivamus arcu felis bibendum ut tristique. Porttitor rhoncus dolor purus non enim praesent elementum facilisis.
           Mauris in aliquam sem fringilla. Non quam lacus suspendisse faucibus. Tristique senectus et netus et malesuada
-          fames ac. <a href="#image">Link to the image above</a>
+          fames ac. <a href="#image">Link to the image above</a> <!-- href after # must match image-component tag -->
         </p>
 
         <!-- This is an example of how you might use the video component -->
-        <video-component tag="rick" source="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          subtitle="Video: Never gonna give you up?"></video-component>
+        <video-component tag="iDP" source="https://www.youtube.com/embed/Rs5h_idKGUg?si=kR2YmHnPTFGg8Nhf"
+          subtitle="Video by NUS iDP: Why do students join iDP?"></video-component>
       </div>
 
       <div id="sub-section-2-header-2">
@@ -187,6 +187,13 @@
           morbi tristique senectus et netus. Turpis massa tincidunt dui ut ornare lectus. Suspendisse sed nisi lacus
           sed. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Ut ornare lectus sit amet est
           placerat in egestas. Magna fringilla urna porttitor rhoncus. Imperdiet dui accumsan sit amet.
+
+          <b>Pellentesque nec</b> nam aliquam sem et tortor consequat. Et netus et malesuada fames ac turpis egestas maecenas.
+          Eu tincidunt tortor aliquam nulla facilisi. Nunc aliquet bibendum enim facilisis gravida. Elementum pulvinar
+          etiam non quam lacus (Moll et al., 2011; Parker & Fox, 2010). Blandit cursus risus at ultrices mi. Arcu dui
+          vivamus arcu felis bibendum ut tristique. Porttitor rhoncus dolor purus non enim praesent elementum facilisis.
+          Mauris in aliquam sem fringilla. Non quam lacus suspendisse faucibus. Tristique senectus et netus et malesuada
+          <a href="#iDP">Link to the video above</a> <!-- href after # must match video-component tag -->
         </p>
 
         <!-- This is an example of how you might use the table component -->
